@@ -67,7 +67,7 @@ class ColumnChangesService {
         return this.columnInputChanges.asObservable();
     }
     onInputChange() {
-        this.columnInputChanges.next();
+        this.columnInputChanges.next(undefined);
     }
 }
 ColumnChangesService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.1.1", ngImport: i0, type: ColumnChangesService, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
